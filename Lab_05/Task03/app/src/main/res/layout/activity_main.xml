@@ -6,7 +6,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="@dimen/margin_base"
-
     tools:context=".MainActivity">
 
     <TextView
@@ -14,9 +13,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#FF6B73"
+        android:textColor="#FFFFFF"
         android:gravity="center"
         android:layout_alignParentTop="true"
-        android:text="Phạm Thị Thanh Vinh -22521680"
+        android:text="@string/username_label"
         android:textSize="18sp" />
 
     <TextView
@@ -64,7 +64,10 @@
                 android:id="@+id/sw_auto_response"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:checked="false"/>
+                android:checked="false"
+                android:minHeight="48dp"
+                android:minWidth="48dp"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
         </LinearLayout>
     </LinearLayout>
     <ListView
